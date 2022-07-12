@@ -10,6 +10,7 @@
 
 body {
   font-family: 'M PLUS 1p', sans-serif;
+  background-color: antiquewhite;
 }
 
 a {
@@ -31,38 +32,46 @@ section {
 }
 
 .container {
+  /* border: black 3px solid; */
   width: 80%;
-  margin: 0 auto;
-  border: black 3px solid;
+  margin: 5px auto;
+  padding: 0 3rem;
+  background-color: white;
 }
 
 .logo {
-  border: 2px solid black;
+  border: 1.5px solid black;
   border-radius: 50%;
   width: 3rem;
   text-align: center;
   padding: 2.5px 5px;
-  margin: 5px auto;
+  margin: 7px auto;
   background-color: antiquewhite;
 }
 
 .navbar {
-  border: pink 3px solid;
+  /* border: pink 3px solid; */
+  margin: 3px 5px;
   display: grid;
   grid-template-columns: 1fr;
-  padding-left: 20px;
+  background-color: white;
 }
 
 .nav-links {
+  /* border: 5px solid black; */
   display: flex;
   justify-content: space-around;
-  border: 5px solid black;
+  /* justify-content: space-between; */
   max-width: 75%;
   margin: 5px auto;
 }
 
 .nav-links li {
-  padding: 5px 15px;
+  /* border: 2px green solid; */
+  /* padding: 5px 15px; */
+  padding: 5px 0;
+  width: 6rem;
+  text-align: center;
 }
 
 .nav-links li:hover {
