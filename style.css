@@ -25,29 +25,50 @@ img {
   width: 100%;
 }
 
-
-
-
-
-.navbar{
-  border: pink 3px solid;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-left: 20px;
-}
-
-.links{
-  display: flex;
-  justify-content: space-around;
-  border: 5px solid black;
-}
-
-.links li:hover {
-  background-color: antiquewhite;
+section {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
-  border: black 3px solid
+  border: black 3px solid;
+}
+
+.logo {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 3rem;
+  text-align: center;
+  padding: 2.5px 5px;
+  margin: 5px auto;
+  background-color: antiquewhite;
+}
+
+.navbar {
+  border: pink 3px solid;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  border: 5px solid black;
+  width: 65%;
+  margin: 5px auto;
+}
+
+.nav-links li {
+  padding: 5px 15px;
+}
+
+.nav-links li:hover {
+  background-color: antiquewhite;
+}
+
+.project {
+  padding-bottom: 10px;
 }
