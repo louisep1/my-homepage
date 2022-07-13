@@ -48,7 +48,8 @@ footer {
 }
 
 .logo {
-  border: 1.5px solid black;
+  /* border: 1.5px solid black; */
+  border: 1.5px solid goldenrod;
   border-radius: 50%;
   width: 5rem;
   text-align: center;
