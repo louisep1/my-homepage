@@ -90,3 +90,10 @@ footer {
 .project {
   padding-bottom: 10px;
 }
+
+.my-face {
+  border-radius: 50%;
+  width: 20rem;
+  margin: 30px auto;
+  /* width: 12rem; */
+}
