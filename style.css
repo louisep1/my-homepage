@@ -27,8 +27,16 @@ img {
 }
 
 section {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 30px;
+  /* background-color: white; */
+}
+
+footer {
+  background-color: white;
+  padding: 50px;
+  text-align: center;
 }
 
 .container {
@@ -42,10 +50,10 @@ section {
 .logo {
   border: 1.5px solid black;
   border-radius: 50%;
-  width: 3rem;
+  width: 5rem;
   text-align: center;
-  padding: 2.5px 5px;
-  margin: 7px auto;
+  padding: 20px 5px;
+  margin: 0px auto 15px;
   background-color: antiquewhite;
 }
 
