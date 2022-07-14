@@ -1,6 +1,11 @@
 /* defaults */
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
 
 * {
   box-sizing: border-box;
@@ -43,7 +48,16 @@ footer {
   /* border: black 3px solid; */
   width: 80%;
   margin: 5px auto;
-  padding: 0 3rem;
+  padding: 20px 3rem;
+  background-color: white;
+}
+
+.navbar {
+  /* border: pink 3px solid; */
+  margin: 3px 5px;
+  padding: 20px 0 10px;
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: white;
 }
 
@@ -52,40 +66,43 @@ footer {
   border: 1.5px solid goldenrod;
   border-radius: 50%;
   width: 5rem;
+  height: 5rem;
   text-align: center;
-  padding: 20px 5px;
-  margin: 0px auto 15px;
+  /* padding: 20px 5px; */
+  margin: 0 auto 15px;
   background-color: antiquewhite;
 }
 
-.navbar {
-  /* border: pink 3px solid; */
-  margin: 3px 5px;
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: white;
+.logo-name {
+  margin: 22px 0 0 5px;
+  font-size: 3.5rem;
+  font-family: 'Indie Flower', cursive;
+  line-height: 0.6;
+  /* border: 3px solid black; */
 }
 
 .nav-links {
   /* border: 5px solid black; */
   display: flex;
   justify-content: space-around;
-  /* justify-content: space-between; */
-  max-width: 75%;
+  max-width: 60%;
   margin: 5px auto;
 }
 
+/* !!! add a media query to fix this nav links for mobile */
+
 .nav-links li {
   /* border: 2px green solid; */
-  /* padding: 5px 15px; */
   padding: 5px 0;
   width: 6rem;
   text-align: center;
 }
 
 .nav-links li:hover {
-  background-color: antiquewhite;
+  font-weight: bold;
 }
+
+/* !!! later - add this antiquewhite color to the bottom of the hovered div */
 
 .project {
   padding-bottom: 10px;
@@ -93,7 +110,20 @@ footer {
 
 .my-face {
   border-radius: 50%;
-  width: 20rem;
-  margin: 30px auto;
-  /* width: 12rem; */
+  width: 18rem;
+  /* 18 or 20 */
+  margin-left: 90px;
+}
+
+.bio {
+  margin: 40px auto;
+}
+
+/* !!! media query for no grid */
+
+/* !!! later add a media query for my face width: 12rem; */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
