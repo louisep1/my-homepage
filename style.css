@@ -127,3 +127,9 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+/* !!! width wouldn't work for media queries etc... */
+.screenshot {
+  width: 50rem;
+  margin: 20px;
+}
