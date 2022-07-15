@@ -1,11 +1,7 @@
 /* defaults */
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
 
 * {
   box-sizing: border-box;
@@ -133,3 +129,5 @@ footer {
   width: 50rem;
   margin: 20px;
 }
+
+/* !!!! go back and make mobile queries */
