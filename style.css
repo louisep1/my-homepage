@@ -54,7 +54,7 @@ footer {
 
 .navbar {
   /* border: pink 3px solid; */
-  margin: 3px 5px;
+  margin: 4px 5px;
   padding: 20px 0 10px;
   display: grid;
   grid-template-columns: 1fr;
@@ -105,7 +105,7 @@ footer {
 /* !!! later - add this antiquewhite color to the bottom of the hovered div */
 
 .project {
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .my-face {
