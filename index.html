@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <script
-      src="https://kit.fontawesome.com/d1b0e84912.js"
+      src="https://kit.fontawesome.com/d1dc957f42.js"
       crossorigin="anonymous"
     ></script>
 
@@ -22,20 +22,18 @@
       <div class="logo">
         <p class="logo-name">LP</p>
       </div>
-      <!-- <a href=""><h1 class="logo">LP</h1></a> -->
-      <!-- <img class="logo" src="my-face.png" alt="" /> -->
       <nav>
         <ul class="nav-links">
-          <li><a href="">Bio</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Links</a></li>
+          <li><a href="#bio">Bio</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#links">Links</a></li>
         </ul>
       </nav>
     </div>
 
     <div class="container">
       <section>
-        <h1>Hello!</h1>
+        <h1 id="bio">Hello!</h1>
         <h3>Louise Pike</h3>
         <div class="grid">
           <div class="bio">
@@ -45,7 +43,10 @@
               Previously teaching English, I decided I wanted something more
               fulfilling.
             </p>
-            <p>This homepage has been build entirely in vanila javascript.</p>
+            <p>
+              This homepage has been build entirely in vanila javascript, css
+              and html.
+            </p>
             <p>
               The following projects are built with react in the frontend, with
               some crud backend functionality using the mern stack.
@@ -57,16 +58,24 @@
 
       <section>
         <div class="project">
-          <h1>Projects</h1>
-          <h3>Event Ticket Page</h3>
-          <a href="http://event-ticket-page.herokuapp.com/"
-            >http://event-ticket-page.herokuapp.com/</a
-          >
-          <!-- !!! add link to git hub repo -->
+          <h1 id="projects">Projects</h1>
+          <h3><i class="fa-solid fa-calendar"></i> Event Ticket Page</h3>
+          <ul>
+            <li>
+              <a href="http://event-ticket-page.herokuapp.com/" target="_blank"
+                ><i class="fa-solid fa-link"></i>
+                http://event-ticket-page.herokuapp.com/</a
+              >
+            </li>
+            <li>
+              <a href="" target="_blank"><i class="fa-solid fa-code"></i></a>
+              <!-- !!! add link to git hub repo -->
+            </li>
+          </ul>
 
           <!-- !!! Maybe make this a slideshow of images OR a gif/video cut preview: -->
 
-          <a href="http://event-ticket-page.herokuapp.com/">
+          <a href="http://event-ticket-page.herokuapp.com/" target="_blank">
             <img class="screenshot" src="my-event-page.jpg" alt="" />
           </a>
 
@@ -75,13 +84,25 @@
             this full-stack app allows users to buy and sell tickets to their
             favourite events.
           </p>
+          <p>
+            mongoDB/mongoose, express/node js, react/react-router/redux toolkit,
+            react bootstrap
+          </p>
         </div>
 
         <div class="project">
-          <h3>Diving School Homepage</h3>
+          <h3><i class="fa-solid fa-fish-fins"></i> Diving School Homepage</h3>
 
-          <!-- !!! app link -->
-          <!-- repo link -->
+          <ul>
+            <li>
+              <a href="" target="_blank"><i class="fa-solid fa-link"></i> .</a>
+              <!-- !!! app link -->
+            </li>
+            <li>
+              <a href="" target="_blank"><i class="fa-solid fa-code"></i></a>
+              <!-- !!! add link to git hub repo -->
+            </li>
+          </ul>
 
           <!-- !!! insert screenshots here -->
 
@@ -89,10 +110,18 @@
         </div>
 
         <div class="project">
-          <h3>Messaging App</h3>
+          <h3><i class="fa-solid fa-message"></i> Messaging App</h3>
 
-          <!-- !!! app link -->
-          <!-- repo link -->
+          <ul>
+            <li>
+              <a href="" target="_blank"><i class="fa-solid fa-link"></i> .</a>
+              <!-- !!! app link -->
+            </li>
+            <li>
+              <a href="" target="_blank"><i class="fa-solid fa-code"></i></a>
+              <!-- !!! add link to git hub repo -->
+            </li>
+          </ul>
 
           <!-- !!! insert screenshots here -->
 
@@ -109,10 +138,20 @@
 
     <footer>
       <!-- !!! later go back and actually add my repos to this portfolio list -->
-      <a href="https://github.com/stars/louisep1/lists/portfolio">GitHub</a>
-      <!-- !!!! fix font aweseome -->
-      <i class="fa-brands fa-github-square"></i>
-      <a href="">Download CV</a>
+      <div id="links">
+        <a
+          href="https://github.com/stars/louisep1/lists/portfolio"
+          target="_blank"
+          >GitHub <i class="fa-brands fa-github-square"></i
+        ></a>
+        <a href="mailto:louisepike@live.co.uk"
+          >Email <i class="fa-solid fa-square-envelope"></i
+        ></a>
+        <a href="">Download CV <i class="fa-solid fa-file"></i></a>
+      </div>
+
+      <!-- <a href="">Email <i class="fa-solid fa-at"></i></a> -->
+      <a href="mailto:louisepike@live.co.uk">louisepike@live.co.uk</a>
     </footer>
   </body>
 </html>
