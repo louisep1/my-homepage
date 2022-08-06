@@ -127,9 +127,18 @@ footer {
 }
 
 /* !!! width wouldn't work for media queries etc... */
-.screenshot {
+/* .screenshot {
   width: 50rem;
   margin: 20px;
+} */
+
+.video {
+  width: 50rem;
+  margin: 40px auto;
+}
+
+video {
+  width: 50rem;
 }
 
 .mt-2 {
