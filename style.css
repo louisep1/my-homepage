@@ -89,16 +89,18 @@ footer {
 
 .nav-links li {
   /* border: 2px green solid; */
-  padding: 5px 0;
-  width: 6rem;
+  padding: 8px 0;
+  /* width: 6rem; */
+  width: 4.5rem;
   text-align: center;
+  border-bottom: #fff 3px solid;
+  /* border-bottom: #000 3px solid; */
 }
 
 .nav-links li:hover {
   font-weight: bold;
+  border-bottom: rgba(246, 188, 42, 0.749) 3px solid;
 }
-
-/* !!! later - add this antiquewhite color to the bottom of the hovered div */
 
 .project {
   padding-bottom: 30px;
@@ -131,7 +133,7 @@ footer {
 }
 
 .mt-2 {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 /* !!!! go back and make mobile queries */
