@@ -235,6 +235,6 @@ video {
 @media (max-width: 400px) {
   .video,
   video {
-    width: 17rem;
+    width: 17.5rem;
   }
 }
