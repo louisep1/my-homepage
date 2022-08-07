@@ -228,3 +228,10 @@ video {
     width: 20rem;
   }
 }
+
+@media (max-width: 400px) {
+  .video,
+  video {
+    width: 18rem;
+  }
+}
