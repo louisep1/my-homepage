@@ -230,6 +230,10 @@ video {
   video {
     width: 20rem;
   }
+
+  footer {
+    padding: 40px 0;
+  }
 }
 
 @media (max-width: 400px) {
