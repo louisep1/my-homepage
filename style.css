@@ -160,6 +160,9 @@ video {
   border-top: #ccc 1px solid;
   border-bottom: #ccc 1px solid;
   padding: 1rem 0.5rem;
+}
+
+.drop > :first-child {
   display: flex;
   justify-content: space-between;
 }
@@ -174,19 +177,19 @@ video {
 }
 
 .drop i {
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 
 .hide {
-  display: none;
-  margin: 1.5rem 0.5rem;
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 
-  /* visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.3s, opacity 0.5s linear;
-  height: 10rem;
-  border: #000 3px solid;
-  transform: translate(0, -20rem); */
+.hide > :first-child {
+  /* this cannot go iin the main hide div, else the space is still there even when the content is 'hidden': */
+  margin: 1.5rem 0.5rem;
 }
 
 footer div:first-child {

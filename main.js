@@ -2,29 +2,16 @@ const drop = document.getElementById('drop')
 const hide = document.querySelector('.hide')
 const icon = document.querySelector('.drop i')
 
-// drop.addEventListener('click', () => console.log('clicked'))
-
-// drop.addEventListener('click', () =>
-//   hide.style.display === 'none'
-//     ? (hide.style.display = 'block')
-//     : (hide.style.display = 'none')
-// )
-
 drop.addEventListener('click', () =>
-  hide.style.display === 'none'
-    ? ((hide.style.display = 'block'),
-      (icon.style.transform = 'rotate(180deg)'))
-    : ((hide.style.display = 'none'), (icon.style.transform = 'rotate(0deg)'))
+  hide.style.maxHeight
+    ? ((icon.style.transform = 'rotate(0deg)'), (hide.style.maxHeight = null))
+    : ((icon.style.transform = 'rotate(180deg)'),
+      (hide.style.maxHeight = '20rem'))
 )
 
-// drop.addEventListener('click', () => {
-//   hide.style.visibility === 'hidden'
-//     ? ((hide.style.visibility = 'visible'),
-//       (hide.style.opacity = 1),
-//       (hide.style.transform = 'translate(0, 20rem)'))
-//     : ((hide.style.visibility = 'hidden'),
-//       (hide.style.opacity = 0),
-//       (hide.style.transform = 'translate(0, -20rem)'))
-// })
-
-// icon.addEventListener('click', () => console.log('click'))
+// drop.addEventListener('click', () =>
+//   hide.style.maxHeight === '20rem'
+//     ? ((icon.style.transform = 'rotate(0deg)'), (hide.style.maxHeight = '0'))
+//     : ((icon.style.transform = 'rotate(180deg)'),
+//       (hide.style.maxHeight = '20rem'))
+// )
