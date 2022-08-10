@@ -160,6 +160,31 @@ video {
   width: 50rem;
 }
 
+.area {
+  border: 3px black solid;
+  position: relative;
+  /* height: 20rem; */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  color: #ccc;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.img-space {
+  width: 90%;
+  margin: 20px auto;
+}
+
 footer div:first-child {
   /* border: #000 3px solid; */
   display: flex;

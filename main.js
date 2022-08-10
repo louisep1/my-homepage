@@ -12,24 +12,24 @@ click.forEach((clickItem, i) => {
   })
 })
 
-//
-//
-// When it was just the one drop down at the bottom:
+const slider = document.getElementById('slider')
+const left = document.querySelector('.left')
+const right = document.querySelector('.right')
 
-// const drop = document.getElementById('drop')
-// const hide = document.querySelector('.hide')
-// const icon = document.querySelector('.drop .fa-chevron-down')
+const images = [
+  './resources/dolphin-page-screenshot.jpg',
+  './resources/weather-page-screenshot.jpg',
+  './resources/dive-map-screenshot.jpg',
+]
 
-// drop.addEventListener('click', () =>
-//   hide.style.maxHeight
-//     ? ((icon.style.transform = 'rotate(0deg)'), (hide.style.maxHeight = null))
-//     : ((icon.style.transform = 'rotate(180deg)'),
-//       (hide.style.maxHeight = '20000rem'))
-// )
+let count = 0
 
-// drop.addEventListener('click', () =>
-//   hide.style.maxHeight === '20rem'
-//     ? ((icon.style.transform = 'rotate(0deg)'), (hide.style.maxHeight = '0'))
-//     : ((icon.style.transform = 'rotate(180deg)'),
-//       (hide.style.maxHeight = '20rem'))
-// )
+left.addEventListener('click', () => {
+  count = count - 1 === -1 ? 2 : count - 1
+  slider.src = images[count]
+})
+
+right.addEventListener('click', () => {
+  count = count + 1 === images.length ? 0 : count + 1
+  slider.src = images[count]
+})
