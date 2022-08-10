@@ -156,9 +156,38 @@ video {
   width: 50rem;
 }
 
-/* footer a {
-  padding: 20px;
-} */
+.drop {
+  border-top: #ccc 1px solid;
+  border-bottom: #ccc 1px solid;
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.drop button {
+  border: none;
+  background-color: #fff;
+}
+
+.drop button:hover {
+  cursor: pointer;
+}
+
+.drop i {
+  transition: transform 1s;
+}
+
+.hide {
+  display: none;
+  margin: 1.5rem 0.5rem;
+
+  /* visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.5s linear;
+  height: 10rem;
+  border: #000 3px solid;
+  transform: translate(0, -20rem); */
+}
 
 footer div:first-child {
   /* border: #000 3px solid; */
