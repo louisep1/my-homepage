@@ -13,7 +13,7 @@ click.forEach((clickItem, i) => {
   })
 })
 
-// Image slider:
+// Slider section:
 const slider = document.getElementById('slider')
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')
@@ -24,14 +24,25 @@ const images = [
   './resources/dive-map-screenshot.jpg',
 ]
 
+const divs = document.querySelectorAll('.slide-div')
+
 let count = 0
+
+const updateDisplay = position => {
+  slider.src = images[position]
+  divs.forEach((div, i) =>
+    i === position
+      ? (div.style.display = 'block')
+      : (div.style.display = 'none')
+  )
+}
 
 left.addEventListener('click', () => {
   count = count - 1 === -1 ? 2 : count - 1
-  slider.src = images[count]
+  updateDisplay(count)
 })
 
 right.addEventListener('click', () => {
   count = count + 1 === images.length ? 0 : count + 1
-  slider.src = images[count]
+  updateDisplay(count)
 })

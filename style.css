@@ -161,9 +161,9 @@ video {
 }
 
 .area {
-  border: 3px black solid;
+  /* border: 3px black solid; */
   position: relative;
-  /* height: 20rem; */
+  height: 35rem;
 }
 
 .arrow {
@@ -180,9 +180,19 @@ video {
   right: 10px;
 }
 
+.slide-div {
+  display: none;
+  padding-bottom: 20px;
+}
+
+.div0 {
+  display: block;
+}
+
 .img-space {
   width: 90%;
   margin: 20px auto;
+  padding: 0 20px;
 }
 
 footer div:first-child {
