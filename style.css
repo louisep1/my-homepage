@@ -190,6 +190,7 @@ video {
 .slide-div {
   display: none;
   padding-bottom: 20px;
+  height: 7rem;
 }
 
 .div0 {
@@ -199,7 +200,9 @@ video {
 .img-space {
   width: 90%;
   margin: 20px auto;
-  padding: 0 20px;
+  /* padding: 0 20px; */
+  padding: 10px;
+  border: rgba(184, 183, 183, 0.379) 1px solid;
 }
 
 footer div:first-child {
@@ -322,6 +325,10 @@ footer div:nth-child(2) {
     height: 28rem;
   }
 
+  .slide-div {
+    height: 8rem;
+  }
+
   .arrow {
     top: 60%;
   }
@@ -359,8 +366,17 @@ footer div:nth-child(2) {
     height: 22rem;
   }
 
+  .slide-div {
+    height: 10rem;
+    font-size: 0.8rem;
+  }
+
   footer {
     padding: 30px 0;
+  }
+
+  .margin-placeholder {
+    margin: 0.8rem 0.5rem;
   }
 }
 
