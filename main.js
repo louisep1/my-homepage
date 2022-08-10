@@ -38,11 +38,33 @@ const updateDisplay = position => {
 }
 
 left.addEventListener('click', () => {
-  count = count - 1 === -1 ? 2 : count - 1
+  count = count - 1 === -1 ? images.length - 1 : count - 1
   updateDisplay(count)
 })
 
 right.addEventListener('click', () => {
   count = count + 1 === images.length ? 0 : count + 1
+  updateDisplay(count)
+})
+
+// Adding left and right swipe functionality to slider:
+const area = document.querySelector('.area')
+let start = 0
+let end = 0
+
+area.addEventListener('touchstart', e => (start = e.changedTouches[0].screenX))
+
+area.addEventListener('touchend', e => {
+  end = e.changedTouches[0].screenX
+
+  count =
+    start > end && count - 1 === -1
+      ? images.length - 1
+      : start > end
+      ? count - 1
+      : count + 1 === images.length
+      ? 0
+      : start < end && count + 1
+
   updateDisplay(count)
 })
