@@ -204,11 +204,19 @@ footer div:nth-child(2) {
   margin-top: 12px;
 }
 
+.mt-3 {
+  margin-top: 18px;
+}
+
 /* Drop down section stuff */
 .drop {
   border-top: #ccc 1px solid;
-  border-bottom: #ccc 1px solid;
+  /* border-bottom: #ccc 1px solid; */
   padding: 1rem 0.5rem;
+}
+
+.drop:last-child {
+  border-bottom: #ccc 1px solid;
 }
 
 .drop > :first-child {

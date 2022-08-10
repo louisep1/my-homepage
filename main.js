@@ -1,3 +1,4 @@
+// Expandable/drop down sections:
 const click = document.querySelectorAll('#click')
 const hide = document.querySelectorAll('.hide')
 const icon = document.querySelectorAll('.drop .fa-chevron-down')
@@ -12,6 +13,7 @@ click.forEach((clickItem, i) => {
   })
 })
 
+// Image slider:
 const slider = document.getElementById('slider')
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')
