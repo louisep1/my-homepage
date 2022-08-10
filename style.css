@@ -211,7 +211,7 @@ footer div:nth-child(2) {
   transition: max-height 0.2s ease-out;
 }
 
-.hide > :first-child {
+.margin-placeholder {
   /* this cannot go iin the main hide div, else the space is still there even when the content is 'hidden': */
   margin: 1.5rem 0.5rem;
 }
