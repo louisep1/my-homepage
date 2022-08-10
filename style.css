@@ -147,6 +147,10 @@ footer {
   padding-bottom: 30px;
 }
 
+.project div h3 i {
+  padding-right: 5px;
+}
+
 .video {
   width: 50rem;
   margin: 40px auto;
@@ -156,6 +160,26 @@ video {
   width: 50rem;
 }
 
+footer div:first-child {
+  /* border: #000 3px solid; */
+  display: flex;
+  justify-content: center;
+  grid-gap: 20px;
+  /* padding: 10px; */
+}
+
+footer div:nth-child(2) {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  padding-top: 6px;
+}
+
+.mt-2 {
+  margin-top: 12px;
+}
+
+/* Drop down section stuff */
 .drop {
   border-top: #ccc 1px solid;
   border-bottom: #ccc 1px solid;
@@ -176,7 +200,7 @@ video {
   cursor: pointer;
 }
 
-.drop i {
+.drop .fa-chevron-down {
   transition: transform 0.5s;
 }
 
@@ -190,25 +214,6 @@ video {
 .hide > :first-child {
   /* this cannot go iin the main hide div, else the space is still there even when the content is 'hidden': */
   margin: 1.5rem 0.5rem;
-}
-
-footer div:first-child {
-  /* border: #000 3px solid; */
-  display: flex;
-  justify-content: center;
-  grid-gap: 20px;
-  /* padding: 10px; */
-}
-
-footer div:nth-child(2) {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 5px;
-  padding-top: 6px;
-}
-
-.mt-2 {
-  margin-top: 12px;
 }
 
 /* Media queries: */
