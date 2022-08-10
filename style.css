@@ -310,6 +310,10 @@ footer div:nth-child(2) {
   video {
     width: 30rem;
   }
+
+  .area {
+    height: 28rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -324,6 +328,10 @@ footer div:nth-child(2) {
   .video,
   video {
     width: 20rem;
+  }
+
+  .area {
+    height: 22rem;
   }
 
   footer {
