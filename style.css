@@ -346,6 +346,11 @@ footer div:nth-child(2) {
     margin: 0 auto;
     padding: 0;
   }
+
+  .drop {
+    /* padding: 1rem 0.5rem; */
+    padding: 0.8rem 0.2rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -367,7 +372,7 @@ footer div:nth-child(2) {
   }
 
   .slide-div {
-    height: 10rem;
+    height: 8rem;
     font-size: 0.8rem;
   }
 
@@ -385,5 +390,9 @@ footer div:nth-child(2) {
   video {
     min-width: 18rem;
     /* width: 17.5rem; */
+  }
+
+  .slide-div {
+    height: 9rem;
   }
 }
