@@ -383,6 +383,18 @@ footer div:nth-child(2) {
   .margin-placeholder {
     margin: 0.8rem 0.5rem;
   }
+
+  #projects {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 400px) {
