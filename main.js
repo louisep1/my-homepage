@@ -64,7 +64,9 @@ area.addEventListener('touchend', e => {
       ? count - 1
       : count + 1 === images.length
       ? 0
-      : start < end && count + 1
+      : start < end
+      ? count + 1
+      : count
 
   updateDisplay(count)
 })
