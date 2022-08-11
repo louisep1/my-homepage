@@ -404,6 +404,10 @@ footer div:nth-child(2) {
     /* width: 17.5rem; */
   }
 
+  .arrow {
+    top: 33%;
+  }
+
   .slide-div {
     height: 9rem;
   }
