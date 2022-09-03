@@ -16,8 +16,6 @@ a {
   text-decoration: none;
   color: #000;
   overflow-wrap: break-word;
-  /* word-break: break-all; */
-  /* line-break: anywhere; */
 }
 
 ul {
@@ -41,7 +39,6 @@ section {
   margin-top: 20px;
   margin-bottom: 60px;
   padding: 0 30px;
-  /* background-color: white; */
 }
 
 footer {
@@ -51,7 +48,6 @@ footer {
 }
 
 .container {
-  /* border: black 3px solid; */
   width: 80%;
   margin: 5px auto;
   padding: 20px 3rem;
@@ -59,7 +55,6 @@ footer {
 }
 
 .navbar {
-  /* border: pink 3px solid; */
   margin: 4px 5px;
   padding: 20px 0 10px;
   display: grid;
@@ -68,13 +63,11 @@ footer {
 }
 
 .logo {
-  /* border: 1.5px solid black; */
   border: 1.5px solid goldenrod;
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
   text-align: center;
-  /* padding: 20px 5px; */
   margin: 0 auto 15px;
   background-color: antiquewhite;
 }
@@ -84,11 +77,9 @@ footer {
   font-size: 3.5rem;
   font-family: 'Indie Flower', cursive;
   line-height: 0.6;
-  /* border: 3px solid black; */
 }
 
 .nav-links {
-  /* border: 5px solid black; */
   display: flex;
   justify-content: space-around;
   max-width: 60%;
@@ -96,12 +87,10 @@ footer {
 }
 
 .nav-links li {
-  /* border: 2px green solid; */
   padding: 8px 0;
   width: 4.5rem;
   text-align: center;
   border-bottom: #fff 3px solid;
-  /* border-bottom: #000 3px solid; */
 }
 
 .nav-links li:hover {
@@ -130,7 +119,6 @@ footer {
 }
 
 .skills {
-  /* border: #000 3px solid; */
   margin-top: 1rem;
   padding-left: 4rem;
 }
@@ -161,7 +149,6 @@ video {
 }
 
 .area {
-  /* border: 3px black solid; */
   position: relative;
   height: 35rem;
 }
@@ -179,11 +166,9 @@ video {
 
 .left {
   left: 0;
-  /* left: 10px; */
 }
 
 .right {
-  /* right: 10px; */
   right: 0;
 }
 
@@ -200,17 +185,14 @@ video {
 .img-space {
   width: 90%;
   margin: 20px auto;
-  /* padding: 0 20px; */
   padding: 10px;
   border: rgba(184, 183, 183, 0.379) 1px solid;
 }
 
 footer div:first-child {
-  /* border: #000 3px solid; */
   display: flex;
   justify-content: center;
   grid-gap: 20px;
-  /* padding: 10px; */
 }
 
 footer div:nth-child(2) {
@@ -231,7 +213,6 @@ footer div:nth-child(2) {
 /* Drop down section stuff */
 .drop {
   border-top: #ccc 1px solid;
-  /* border-bottom: #ccc 1px solid; */
   padding: 1rem 0.5rem;
 }
 
@@ -258,7 +239,6 @@ footer div:nth-child(2) {
 }
 
 .hide {
-  /* max-height: 0; */
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
@@ -272,7 +252,7 @@ footer div:nth-child(2) {
 }
 
 .margin-placeholder {
-  /* this cannot go iin the main hide div, else the space is still there even when the content is 'hidden': */
+  /* this cannot go in the main hide div, else the margin space is still there even when the content itself is 'hidden': */
   margin: 1.5rem 0.5rem;
 }
 
@@ -288,12 +268,10 @@ footer div:nth-child(2) {
   }
 
   .grid {
-    /* border: #000 3px solid; */
     grid-template-columns: 1fr;
   }
 
   .grid > :nth-child(2) {
-    /* border: pink 3px solid; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,7 +333,6 @@ footer div:nth-child(2) {
   }
 
   .drop {
-    /* padding: 1rem 0.5rem; */
     padding: 0.8rem 0.2rem;
   }
 }
@@ -404,12 +381,7 @@ footer div:nth-child(2) {
   .video,
   video {
     min-width: 18rem;
-    /* width: 17.5rem; */
   }
-
-  /* .arrow {
-    top: 33%;
-  } */
 
   .slide-div {
     height: 9rem;

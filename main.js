@@ -74,7 +74,7 @@ let end = 0
 area.addEventListener('touchstart', e => (start = e.changedTouches[0].screenX))
 
 area.addEventListener('touchend', e => {
-  // check the location of the start of swipe is not in the area of the left/right arrows
+  // First, check the location of the start of swipe is not in the area of the left/right arrows
   if (
     start > left.getBoundingClientRect().right &&
     start < right.getBoundingClientRect().left
