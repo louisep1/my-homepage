@@ -34,7 +34,7 @@ click.forEach((clickItem, i) => {
 
 // Slider section:
 
-// !!!!! TO DO - FIXED left/right buttons for touch screen so doesn't treat it like swipe (mini projects section)
+// !!!!! TO DO - FIXE left/right buttons for touch screen so doesn't treat it like swipe (mini projects section)
 const slider = document.getElementById('slider')
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')
