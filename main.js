@@ -3,17 +3,38 @@ const click = document.querySelectorAll('#click')
 const hide = document.querySelectorAll('.hide')
 const icon = document.querySelectorAll('.drop .fa-chevron-down')
 
+window.addEventListener('load', () => {
+  click.forEach((clickItem, i) => {
+    if (hide[i].className.includes('open')) {
+      icon[i].style.transform = 'rotate(180deg)'
+    }
+  })
+})
+
 click.forEach((clickItem, i) => {
   clickItem.addEventListener('click', () => {
-    hide[i].style.maxHeight
-      ? ((icon[i].style.transform = 'rotate(0deg)'),
-        (hide[i].style.maxHeight = null))
-      : ((icon[i].style.transform = 'rotate(180deg)'),
-        (hide[i].style.maxHeight = '200rem'))
+    if (hide[i].className.includes('open')) {
+      icon[i].style.transform = 'rotate(0deg)'
+      hide[i].classList = 'hide closed'
+      return
+    }
+
+    if (hide[i].className.includes('closed')) {
+      if (hide[i].style.maxHeight) {
+        icon[i].style.transform = 'rotate(0deg)'
+        hide[i].style.maxHeight = null
+      } else {
+        icon[i].style.transform = 'rotate(180deg)'
+        hide[i].style.maxHeight = '200rem'
+      }
+    }
+    return
   })
 })
 
 // Slider section:
+
+// !!!!! TO DO - FIXED left/right buttons for touch screen so doesn't treat it like swipe (mini projects section)
 const slider = document.getElementById('slider')
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')

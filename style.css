@@ -258,10 +258,17 @@ footer div:nth-child(2) {
 }
 
 .hide {
-  /* display: none; */
-  max-height: 0;
+  /* max-height: 0; */
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.closed {
+  max-height: 0;
+}
+
+.open {
+  max-height: 200rem;
 }
 
 .margin-placeholder {
