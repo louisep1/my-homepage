@@ -33,8 +33,6 @@ click.forEach((clickItem, i) => {
 })
 
 // Slider section:
-
-// !!!!! TO DO - FIXE left/right buttons for touch screen so doesn't treat it like swipe (mini projects section)
 const slider = document.getElementById('slider')
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')
@@ -76,18 +74,26 @@ let end = 0
 area.addEventListener('touchstart', e => (start = e.changedTouches[0].screenX))
 
 area.addEventListener('touchend', e => {
-  end = e.changedTouches[0].screenX
+  // check the location of the start of swipe is not in the area of the left/right arrows
+  if (
+    start > left.getBoundingClientRect().right &&
+    start < right.getBoundingClientRect().left
+  ) {
+    end = e.changedTouches[0].screenX
 
-  count =
-    start > end && count - 1 === -1
-      ? images.length - 1
-      : start > end
-      ? count - 1
-      : count + 1 === images.length
-      ? 0
-      : start < end
-      ? count + 1
-      : count
+    count =
+      start > end && count - 1 === -1
+        ? images.length - 1
+        : start > end
+        ? count - 1
+        : count + 1 === images.length
+        ? 0
+        : start < end
+        ? count + 1
+        : count
 
-  updateDisplay(count)
+    updateDisplay(count)
+  }
+
+  start = 0
 })
