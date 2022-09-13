@@ -38,6 +38,10 @@ h1 {
   font-size: 1.6rem;
 }
 
+h3 {
+  font-weight: 500;
+}
+
 p {
   line-height: 1.6;
   padding-bottom: 5px;
@@ -62,7 +66,6 @@ footer {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 3px #ccc;
-
   /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); */
 }
 
@@ -71,7 +74,6 @@ footer {
   justify-content: space-between;
   align-items: flex-end;
   padding: 12px 40px;
-
   background: var(--light-color);
 }
 
@@ -105,13 +107,12 @@ footer {
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 0 15px 3px;
+  /* 3px margin bottom is placeholder for hover border */
   padding: 4px 0;
   width: 4.5rem;
   text-align: center;
-
-  /* border placeholder: */
-  margin-bottom: 3px;
+  font-size: 1.1rem;
 }
 
 .nav-links li:hover {
@@ -132,7 +133,6 @@ footer {
 }
 
 .greet {
-  /* font-family: 'Indie Flower', cursive; */
   font-size: 2.4rem;
   font-weight: 100;
   text-align: center;
@@ -157,7 +157,6 @@ footer {
 
 /* Skills section for top and main: */
 .skills-box {
-  /* border: #000 3px solid; */
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10px;
@@ -183,10 +182,6 @@ footer {
   background-color: rgb(239, 192, 80);
 }
 
-/* .outline {
-  border: #333 1.5px solid;
-} */
-
 .skills-heading {
   font-weight: bold;
   padding: 10px 0 2px 5px;
@@ -195,9 +190,7 @@ footer {
 /* Link Buttons: */
 .btn a {
   display: inline-block;
-  /* color: #fff; */
   width: max-content;
-  /* padding: 8px 10px; */
   padding: 10px 15px;
   margin-bottom: 8px;
   border-radius: 5px;
@@ -227,6 +220,7 @@ footer {
 
 .project .project-name h3 {
   padding-top: 0.3rem;
+  font-weight: 500;
 }
 
 .project .icon {
@@ -453,6 +447,10 @@ footer div:nth-child(2) {
 }
 
 @media (max-width: 600px) {
+  .nav-links li {
+    font-size: 1rem;
+  }
+
   section {
     padding: 5px;
   }
@@ -506,7 +504,7 @@ footer div:nth-child(2) {
   }
 
   .logo {
-    margin: 0 auto 5px;
+    margin: 5px auto 10px;
   }
 
   .nav-links {
