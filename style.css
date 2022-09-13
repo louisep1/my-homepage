@@ -72,7 +72,7 @@ footer {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   padding: 12px 40px;
   background: var(--light-color);
 }
@@ -110,9 +110,9 @@ footer {
   margin: 0 15px 3px;
   /* 3px margin bottom is placeholder for hover border */
   padding: 4px 0;
-  width: 4.5rem;
   text-align: center;
   font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .nav-links li:hover {
