@@ -159,6 +159,7 @@ footer {
   padding: 3px 10px;
   min-width: max-content;
   text-align: center;
+  word-break: keep-all;
   /* word-break: break-all; */
 }
 
