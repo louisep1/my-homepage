@@ -150,6 +150,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10px;
+  align-items: center;
 }
 
 .skill {
