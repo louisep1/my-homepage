@@ -86,7 +86,8 @@ footer {
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: center;
   margin: 5px 0;
 }
 
