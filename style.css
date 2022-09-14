@@ -160,6 +160,7 @@ footer {
   padding: 3px 10px;
   /* min-width: max-content; */
   text-align: center;
+  width: fit-content;
   /* word-break: keep-all; */
   /* word-break: break-all; */
 }
