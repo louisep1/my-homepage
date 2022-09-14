@@ -151,11 +151,12 @@ footer {
   flex-wrap: wrap;
   margin-bottom: 10px;
   align-items: center;
+  gap: 5px 5px;
 }
 
 .skill {
   border-radius: 20px;
-  margin: 5px 5px 5px 0;
+  /* margin: 5px 5px 5px 0; */
   padding: 3px 10px;
   /* min-width: max-content; */
   text-align: center;
