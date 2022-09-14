@@ -156,6 +156,8 @@ footer {
   border-radius: 20px;
   margin: 5px 5px 5px 0;
   padding: 3px 10px;
+  width: max-content;
+  /* word-break: break-all; */
 }
 
 .coral {
