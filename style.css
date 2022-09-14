@@ -157,19 +157,17 @@ footer {
   border-radius: 20px;
   margin: 5px 5px 5px 0;
   padding: 3px 10px;
-  width: max-content;
+  min-width: max-content;
   text-align: center;
   /* word-break: break-all; */
 }
 
 .coral {
   background: #ff6f61;
-  padding: 3px 10px;
 }
 
 .dull {
   background: #92a8d1;
-  padding: 3px 10px;
 }
 
 .yellow {
