@@ -167,14 +167,17 @@ footer {
 
 .coral {
   background: #ff6f61;
+  border: #ff6f61 2px solid;
 }
 
 .dull {
   background: #92a8d1;
+  border: #92a8d1 2px solid;
 }
 
 .yellow {
   background-color: rgb(239, 192, 80);
+  border: rgb(239, 192, 80) 2px solid;
 }
 
 .skills-heading {
